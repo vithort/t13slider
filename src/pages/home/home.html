@@ -6,9 +6,21 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding style="background-color: grey">
+  <ion-slides pager="true" paginationType="bullet" effect="flip" speed="1000" (ionSlideDidChange)="slideChanged()">
+    <!-- paginationType: fraction, progress, etc. -->
+    <!-- effect: fade, cube, coverflow, flip, etc. -->
+    <ion-slide>
+      <img src="http://exploreazerbaijan.com/images/?src=/upload/iblock/fb9/fb9a978fe6cf3d7ae9cd577ad48810ee.jpg&w=300"/>
+      <h2>Slide 1</h2>
+    </ion-slide>  
+    <ion-slide>
+      <img src="https://www.azernews.az/media/2017/03/13/baakuuu_6.jpg"/>
+      <h2>Slide 2</h2>
+    </ion-slide>  
+    <ion-slide>
+      <img src="https://www.formula1.com/content/fom-website/en/latest/headlines/2016/3/f1-baku-worlds-fastest--street-circuit/_jcr_content/articleContent/pullquote/image.img.1024.medium.jpg/1458925284399.jpg"/>
+      <h2>Slide 3</h2>
+    </ion-slide>  
+  </ion-slides>
 </ion-content>
